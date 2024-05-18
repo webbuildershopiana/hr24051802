@@ -71,7 +71,7 @@
 
 <style type="text/css">
 
-* { box-sizing: border-box; } body {margin: 0;}#ijlgr{padding:30px 20px;display:flex;flex-direction:row;justify-content:space-evenly;align-items:center;}#iczik{height:20px;}#insz5{height:20px;}#i5adp{height:20px;}#ix7vz{height:20px;}#im1w3{height:60px;}#icse7{padding:30px 20px;display:flex;flex-direction:row;justify-content:center;align-items:center;}#ihwlw{padding:30px 20px;display:flex;flex-direction:row;justify-content:center;align-items:center;}#i3crh{border:1px solid rgba(0,0,0,0.1);}#i3crh:hover{background-color:#f69813;color:#ffffff;transition:all 0.2s linear;}@keyframes fadeEffect{from{opacity:0;}to{opacity:1;}}
+* { box-sizing: border-box; } body {margin: 0;}#ijlgr{padding:30px 20px;display:flex;flex-direction:row;justify-content:space-evenly;align-items:center;}#iczik{height:20px;}#insz5{height:20px;}#i5adp{height:20px;}#ix7vz{height:20px;}#im1w3{height:60px;}#icse7{padding:30px 20px;display:flex;flex-direction:row;justify-content:center;align-items:center;}#ihwlw{padding:30px 20px;display:flex;flex-direction:row;justify-content:center;align-items:center;}#i3crh{border:1px solid rgba(0,0,0,0.1);}#i3crh:hover{background-color:#f69813;color:#ffffff;transition:all 0.2s linear;}.hamburger3{display:none;}.bar3{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}@keyframes fadeEffect{from{opacity:0;}to{opacity:1;}}@media only screen and (max-width: 992px){.hamburger3{display:block;cursor:pointer;}.hamburger3.active .bar3:nth-child(2){opacity:0;}.hamburger3.active .bar3:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger3.active .bar3:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
 
 </style>
 
@@ -98,6 +98,30 @@
     </div>
    </div>
   </div>
+  <div data-gjs-type="ui-header" id="i46bs">
+   <nav class="navbar navbar-expand-lg sticky-top bg-white p-3">
+    <div class="container" id="idp37">
+     <div class="hamburger3" id="i7i9n">
+      <span class="bar3"></span><span class="bar3"></span><span class="bar3"></span>
+     </div>
+     <div id="collapseId" class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto" id="ik9dn">
+       <li class="nav-item"><a aria-current="page" href="#" class="nav-link mx-2 text-uppercase active">Offers</a></li>
+       <li class="nav-item"><a href="#" class="nav-link mx-2 text-uppercase">Products</a></li>
+       <li class="nav-item"><a href="#" class="nav-link mx-2 text-uppercase">Catalog</a></li>
+       <li class="nav-item"><a href="#" class="nav-link mx-2 text-uppercase">Services</a></li>
+       <li class="nav-item"><a href="#" class="nav-link mx-2 text-uppercase">About</a></li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </div>
+  <script>var items = document.querySelectorAll('#i46bs');
+          for (var i = 0, len = items.length; i < len; i++) {
+            (function(){
+const t=this.querySelectorAll(".hamburger3"),e=this.querySelectorAll(".navbar-collapse");for(let n=0;n<t.length;n++)t[n].addEventListener("click",function(){t[n].classList.toggle("active"),e[n].classList.toggle("show")})
+}.bind(items[i]))();
+          }</script>
  </body>
 </html>
 </html>
