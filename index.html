@@ -71,7 +71,7 @@
 
 <style type="text/css">
 
-* { box-sizing: border-box; } body {margin: 0;}#ijlgr{padding:30px 20px;display:flex;flex-direction:row;justify-content:space-evenly;align-items:center;}#iczik{height:20px;}#insz5{height:20px;}#i5adp{height:20px;}#ix7vz{height:20px;}#im1w3{height:60px;}#icse7{padding:30px 20px;display:flex;flex-direction:row;justify-content:center;align-items:center;}#ihwlw{padding:30px 20px;display:flex;flex-direction:row;justify-content:center;align-items:center;}#i3crh{border:1px solid rgba(0,0,0,0.1);}#i3crh:hover{background-color:#f69813;color:#ffffff;transition:all 0.2s linear;}.hamburger3{display:none;}.bar3{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}#i5p2b{height:60px;}#igwil{border:1px solid rgba(0,0,0,0.1);}#igwil:hover{background-color:#f69813;color:#ffffff;transition:all 0.2s linear;}@keyframes fadeEffect{from{opacity:0;}to{opacity:1;}}@media only screen and (max-width: 992px){.hamburger3{display:block;cursor:pointer;}.hamburger3.active .bar3:nth-child(2){opacity:0;}.hamburger3.active .bar3:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger3.active .bar3:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
+* { box-sizing: border-box; } body {margin: 0;}#ijlgr{padding:30px 20px;display:flex;flex-direction:row;justify-content:space-evenly;align-items:center;}#iczik{height:20px;}#insz5{height:20px;}#i5adp{height:20px;}#ix7vz{height:20px;}#im1w3{height:60px;}#icse7{padding:30px 20px;display:flex;flex-direction:row;justify-content:center;align-items:center;}#ihwlw{padding:30px 20px;display:flex;flex-direction:row;justify-content:center;align-items:center;}#i3crh{border:1px solid rgba(0,0,0,0.1);}#i3crh:hover{background-color:#f69813;color:#ffffff;transition:all 0.2s linear;}.hamburger3{display:none;}.bar3{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}#i5p2b{height:60px;}#igwil{border:1px solid rgba(0,0,0,0.1);}#igwil:hover{background-color:#f69813;color:#ffffff;transition:all 0.2s linear;}.swiper-slide-content{bottom:2%;}[data-gjs-type="swiper-slide-item"]{height:80vh !important;}[data-gjs-type="Testimonial Swiper One"]{height:80vh !important;}@keyframes fadeEffect{from{opacity:0;}to{opacity:1;}}@media only screen and (max-width: 992px){.hamburger3{display:block;cursor:pointer;}.hamburger3.active .bar3:nth-child(2){opacity:0;}.hamburger3.active .bar3:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger3.active .bar3:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
 
 </style>
 
@@ -120,10 +120,43 @@
     </div>
    </nav>
   </div>
+  <div id="imh4a">
+   <div class="swiper w-100 testimonial-swiper-one my-4 border">
+    <div class="swiper-wrapper">
+     <div class="swiper-slide position-relative">
+      <img src="https://media.istockphoto.com/id/948363084/video/long-exposure-background-loop.jpg?s=640x640&amp;k=20&amp;c=CAGs7xoh75C4M5GhN0IYsSRzTW8SHwAZn1xJWi_c8EE=" alt="swiper-image" class="swiper-image w-100">
+      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column swiper-slide-content">
+       <p class="fs-5 mb-2">Third Slide</p><span>Some representative placeholder content for the Third slide.</span>
+      </div>
+     </div>
+     <div class="swiper-slide position-relative">
+      <img src="https://media.istockphoto.com/id/948363084/video/long-exposure-background-loop.jpg?s=640x640&amp;k=20&amp;c=CAGs7xoh75C4M5GhN0IYsSRzTW8SHwAZn1xJWi_c8EE=" alt="swiper-image" class="swiper-image w-100">
+      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column swiper-slide-content">
+       <p class="fs-5 mb-2">Third Slide</p><span>Some representative placeholder content for the Third slide.</span>
+      </div>
+     </div>
+     <div class="swiper-slide position-relative">
+      <img src="https://media.istockphoto.com/id/948363084/video/long-exposure-background-loop.jpg?s=640x640&amp;k=20&amp;c=CAGs7xoh75C4M5GhN0IYsSRzTW8SHwAZn1xJWi_c8EE=" alt="swiper-image" class="swiper-image w-100">
+      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column swiper-slide-content">
+       <p class="fs-5 mb-2">Third Slide</p><span>Some representative placeholder content for the Third slide.</span>
+      </div>
+     </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+   </div>
+  </div>
   <script>var items = document.querySelectorAll('#inbnk');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
 const t=this.querySelectorAll(".hamburger3"),e=this.querySelectorAll(".navbar-collapse");for(let n=0;n<t.length;n++)t[n].addEventListener("click",function(){t[n].classList.toggle("active"),e[n].classList.toggle("show")})
+}.bind(items[i]))();
+          }
+          var items = document.querySelectorAll('#imh4a');
+          for (var i = 0, len = items.length; i < len; i++) {
+            (function(){
+if(!document.querySelector('link[href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"]')){const t=document.createElement("link");t.rel="stylesheet",t.href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",document.head.appendChild(t)}if(document.querySelector('script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]'))new Swiper(".testimonial-swiper-one",{slidesPerView:1,spaceBetween:30,loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",type:"bullets"},autoplay:!0});else{const t=document.createElement("script");t.src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",document.head.appendChild(t),t.onload=function(){new Swiper(".testimonial-swiper-one",{slidesPerView:1,spaceBetween:30,loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",type:"bullets"},autoplay:!0})}}
 }.bind(items[i]))();
           }</script>
  </body>
